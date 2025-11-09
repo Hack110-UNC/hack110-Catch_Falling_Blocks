@@ -200,7 +200,7 @@ while running:
             b = int(TOP_LEFT[2] * (1 - ratio) + BOTTOM_RIGHT[2] * ratio)
             pygame.draw.rect(screen, (r, g, b), (0, y, width, 40))
 
-        title = font.render("Instructions", True, DARK_BROWN)
+        title = title_font.render("Instructions", True, DARK_BROWN)
         line1 = font.render("Use LEFT and RIGHT arrows to move platform", True, DARK_BROWN)
         line2 = font.render("Catch BLUE blocks to increase score", True, DARK_BROWN)
         line3 = font.render("Catch RED hearts for extra lives*", True, DARK_BROWN)
@@ -231,7 +231,7 @@ while running:
             b = int(TOP_LEFT[2] * (1 - ratio) + BOTTOM_RIGHT[2] * ratio)
             pygame.draw.rect(screen, (r, g, b), (0, y, width, 40))
 
-        title = font.render("Modifiers", True, DARK_BROWN)
+        title = title_font.render("Modifiers", True, DARK_BROWN)
         screen.blit(title, title.get_rect(center=(width // 2, 150)))
         
         if back_button_rect.collidepoint(mouse_pos):
