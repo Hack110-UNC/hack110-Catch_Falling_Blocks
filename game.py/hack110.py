@@ -42,8 +42,8 @@ try:
     menu_background_image = pygame.image.load("game.py/images/colorful-blocks-falling-gently-with-clouds-below-daytime-animation-video.jpg").convert()
     menu_background_image = pygame.transform.scale(menu_background_image, (width, height))
 except Exception as e:
-    print(f"Error loading image: {e}")  # I have no idea what this does. My background wouldn't display
-                                        # without it so I had to search this up.
+    print(f"Error loading image: {e}")
+    
     menu_background_image = None
 
 def reset_game():
